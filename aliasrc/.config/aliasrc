@@ -1,13 +1,16 @@
 # idea: check distro, if arch then enable this block of alias
 # Package manager
-alias ys="yay -S"
-alias yss="yay -Ss"
-alias ysi="yay -Si"
-alias yupdate="yay -Syu"
-alias yq="yay -Q | fzf"
-alias yqi="yay -Q | fzf | awk '{print $1}' | xargs yay -Qi"
-alias yqs="yay -Qs"
-alias yrns="yay -Rns"
+
+if type yay > /dev/null; then
+    alias ys="yay -S"
+    alias yss="yay -Ss"
+    alias ysi="yay -Si"
+    alias yupdate="yay -Syu"
+    alias yq="yay -Q | fzf"
+    alias yqi="yay -Q | fzf | awk '{print $1}' | xargs yay -Qi"
+    alias yqs="yay -Qs"
+    alias yrns="yay -Rns"
+fi
 
 # Alias for git
 alias dotfiles="/usr/bin/git --git-dir=$HOME/repos/dotfiles.git --work-tree=$HOME" #for dotfiles repo
