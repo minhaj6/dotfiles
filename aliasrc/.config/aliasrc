@@ -1,0 +1,56 @@
+# idea: check distro, if arch then enable this block of alias
+# Package manager
+alias ys="yay -S"
+alias yss="yay -Ss"
+alias ysi="yay -Si"
+alias yupdate="yay -Syu"
+alias yq="yay -Q | fzf"
+alias yqi="yay -Q | fzf | awk '{print $1}' | xargs yay -Qi"
+alias yqs="yay -Qs"
+alias yrns="yay -Rns"
+
+# Alias for git
+alias dotfiles="/usr/bin/git --git-dir=$HOME/repos/dotfiles.git --work-tree=$HOME" #for dotfiles repo
+alias tb="nc termbin.com 9999"
+alias tbc="nc termbin.com 9999 | xclip -selection c"
+
+# Run neovim as vim
+alias vim="nvim"
+
+# Config alias
+alias cfnb="nvim ~/.config/newsboat/config"
+alias cfv="nvim ~/.config/nvim/init.vim"
+alias cfi="nvim ~/.config/i3/config"
+alias cfpb="nvim ~/.config/polybar/config"
+alias cfpbs="nvim ~/.config/polybar/polybar-scripts"
+alias nburl="nvim ~/.config/newsboat/urls"
+alias cfa="nvim ~/.config/aliasrc"
+alias cfsk="nvim ~/.config/sxhkd/sxhkdrc"
+alias cfz="nvim ~/.zshrc"
+alias cfze="nvim ~/.zshenv"
+alias cfza="nvim ~/.config/zathura/zathurarc"
+alias cfd="nvim ~/.config/dunst/dunstrc"
+alias cfp="nvim ~/.config/polybar/config"
+
+
+# Few human friendly alias
+alias free="free -h"
+alias du="du -h"
+alias df="df -h"
+alias ls='ls -h --color=tty --sort=time --group-directories-first'
+alias ll="ls -lhF --color=tty"
+alias lla="ls -lAFh --color=tty"
+alias la="ls -AhF --color=tty"
+alias grep="grep --color=auto"
+
+alias dirs="dirs -v"
+alias mv="mv -iv"
+alias cp="cp -iv"
+alias rm="rm -Iv"
+
+alias d="dict -d wn"
+alias cam="mpv av://v4l2:/dev/video0 --profile=low-latency --untimed"
+alias fcam="ffplay -left 10 -f v4l2 -fflags nobuffer -flags low_delay -video_size 640x480 -framerate 60 -i /dev/video0 2&>/dev/null"
+
+alias rustscan='docker run -it --rm --name rustscan rustscan/rustscan:1.10.0'
+alias stfu="/mnt/d/IUTstuff"

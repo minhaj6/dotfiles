@@ -1,0 +1,8 @@
+[character]
+success_symbol = "[λ •](bold green)"
+error_symbol = "[λ •](bold red)"
+
+[hostname]
+format = "[$hostname]($style) [•](242) "
+ssh_only = false
+style = "bold red"
