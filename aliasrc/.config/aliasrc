@@ -12,8 +12,6 @@ if type yay > /dev/null; then
     alias yrns="yay -Rns"
 fi
 
-# Alias for git
-alias dotfiles="/usr/bin/git --git-dir=$HOME/repos/dotfiles.git --work-tree=$HOME" #for dotfiles repo
 alias tb="nc termbin.com 9999"
 alias tbc="nc termbin.com 9999 | xclip -selection c"
 
