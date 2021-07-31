@@ -49,7 +49,6 @@ highlight Normal guibg=none
 
 	set cursorline
 	set cursorcolumn
-	autocmd InsertEnter * norm zz
 
 " Remove last word remap consistantly
 	inoremap <C-H> <C-W>

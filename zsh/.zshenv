@@ -13,6 +13,7 @@ export WEECHAT_HOME="~/.config/weechat"
 export FZF_DEFAULT_OPTS="--layout=reverse --height 50%"
 export GNUPGHOME="~/.local/gnupg"
 export PASSWORD_STORE_DIR="$HOME/.local/password_store"
+export STARSHIP_CONFIG="~/.starship/config.toml"
 
 # MAN PAGE COLORING
 # export LESS_TERMCAP_mb=$(tput bold; tput setaf 2) # start blinking green
@@ -29,6 +30,3 @@ export LESS_TERMCAP_so="$(printf '%b' '[01;44;33m')"
 export LESS_TERMCAP_se="$(printf '%b' '[0m')"
 export LESS_TERMCAP_us="$(printf '%b' '[1;32m')"
 export LESS_TERMCAP_ue="$(printf '%b' '[0m')"
-
-
-export DISPLAY=172.20.128.1:0.0
