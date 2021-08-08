@@ -65,6 +65,10 @@ bindkey -s '^o' 'ranger_cd\n'
 
 source ~/.config/aliasrc
 
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+if type pacman > /dev/null; then
+    source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+else
+    source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
 
 eval "$(starship init zsh)"
