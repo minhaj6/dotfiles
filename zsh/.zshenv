@@ -1,4 +1,6 @@
 export PATH=~/.local/bin:$PATH
+export PATH=/home/sage/.local/share/intelFPGA_lite/20.1/quartus/bin:$PATH
+export PATH=/home/sage/.local/share/intelFPGA_lite/20.1/modelsim_ase/bin:$PATH
 export EDITOR="nvim"
 export VISUAL="nvim"
 export READER="zathura"

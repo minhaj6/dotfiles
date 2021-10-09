@@ -56,4 +56,8 @@ alias fcam="ffplay -left 10 -f v4l2 -fflags nobuffer -flags low_delay -video_siz
 alias rustscan='docker run -it --rm --name rustscan rustscan/rustscan:1.10.0'
 alias stfu="/mnt/d/IUTstuff"
 
-alias ros="source devel/setup.zsh"
+alias ross="source devel/setup.zsh"
+alias ros="source /opt/ros/noetic/setup.zsh"
+
+alias vsim="sudo /home/sage/intelFPGA_lite/20.1/modelsim_ase/bin/vsim"
+alias quartus="sudo /home/sage/intelFPGA_lite/20.1/quartus/bin/quartus"
