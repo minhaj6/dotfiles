@@ -8,11 +8,14 @@ Plug 'Raimondi/delimitMate'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdcommenter'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 call plug#end()
 
 let g:gruvbox_contrast_dark = "hard"
 autocmd vimenter * colorscheme gruvbox		" calling gruvbox colorscheme
+
+source $HOME/.config/nvim/cocconfig.vim
 
 " Neat basics:
 	syntax on
