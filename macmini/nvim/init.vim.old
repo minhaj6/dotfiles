@@ -1,0 +1,27 @@
+" Neat basics
+syntax on
+set clipboard+=unnamedplus
+set noerrorbells
+set nohlsearch
+set incsearch
+set mouse=a
+
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+
+set undofile
+set undodir=~/.cache/nvim_undodir
+
+set smartindent
+set smartcase
+set number relativenumber
+
+" Know your hidden stuff
+set list listchars=nbsp:¬,tab:»·,trail:·,extends:>
+
+" Visual block
+vmap < <gv
+vmap > >gv
+map j gj
+map k gk
